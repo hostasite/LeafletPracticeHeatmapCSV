@@ -26,7 +26,10 @@ $(document).ready(function() {
 
 function displayData(Text){
   data = $.csv.toObjects(Text);
-  var map = L.map('map').setView([0,-30], 2);
+  var map = L.map('map', {
+    center: [-28.636,137.781],
+    zoom: 4
+  });
   var OpenStreetMap_BlackAndWhite = L.tileLayer('http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, example by <a href="http://www.digital-geography.com">digital-geography.com</a>'
   }).addTo(map);
