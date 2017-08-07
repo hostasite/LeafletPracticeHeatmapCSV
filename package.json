@@ -1,0 +1,11 @@
+{
+  "name": "leafletheatmapcsv",
+  "version": "1.0.0",
+  "description": "Using LEaflet to create HEatmaps with CSV data",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "C G",
+  "license": "ISC"
+}
